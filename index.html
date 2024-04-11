@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+<body>
+<div class="container-gral">
+  <div class="container-card">
+        
+    <div class="card-front">
+      <div class="card-logo">
+        <img src="./images/card-logo.svg" alt="logo de la tarjeta">
+      </div>
+      <div class="front">
+        <div class="number">
+          <p id="number" >0000 0000 0000 0000</p>
+        </div>
+        <div class="data">
+          
+          
+        </div>
+      </div>
+    </div>
+    <div class="card-back">
+      <div class="code">
+        <p id="sec-code">000</p>
+      </div>
+    </div>
+  </div>      
+  <form class="form ">
+    <div class="form-data--user">
+
+      <label for="input-name" class="label-name">
+        Cardholder Name
+        <input type="text" name="data-name" id="input-name" class="name-input" placeholder="e.g. Jane Appleseed">
+      </label>
+      <p id="p-name" class="alert-paragraph hidden ">Can't be blank</p>
+      <label for="input-number" class="label-number">
+        Card Number
+        <input type="text" name="card-number" class="input-number" id="input-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+      </label>
+      <p id="p-number" class="alert-paragraph hidden">Cant't be blank</p>
+    </div>
+    
+    <div class="form-date">
+      <div class="date">
+        <p>Exp. Date (MM/YY)</p>
+        <div class="input-time">
+          <input type='text' id="input-month" class="input-date" minlength="2" maxlength="2" placeholder="MM">
+          <input type='text' id="input-year" class="input-date" placeholder="YY" min="2" maxlength="2">
+        </div>
+        <p id="p-date" class="alert-paragraph hidden">Can't be blank</p>
+      </div>
+      <div class="code">
+        <p>CVC</p>
+        <input  type='text' name="code"  class="input-code" id="input-code" placeholder="e.g. 123" min="3" maxlength="4">
+        <p id="p-code" class="alert-paragraph hidden">Can't be blank</p>
+      </div>
+    </div>    
+      
+      <input class="btn" id="btn" type="submit" value="Confirm">
+
+
+  </form>
+
+  <div class="complete hidden">
+   <div class="img-ok">
+    <img src="./images/icon-complete.svg" alt="send image">
+    <div class="text">
+      <p>Thank you!</p>
+      <p>We've added your card details</p>
+    </div>
+    <button id="btn-continue" class="btn">Continue</button>
+  </div>
+</div>
+  
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a> 
+  Coded by <a href="#">ArirockDev.</a>
+</div>
+</div>
+  <script src="./main.js"></script>
+</body>
+</html>
